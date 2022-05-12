@@ -1,4 +1,4 @@
-# Sparta Node Sample App
+## Sparta Node Sample App
 
 ## Description
 
@@ -16,15 +16,15 @@ Displays a simple homepage displaying a Sparta logo and message. This page shoul
 
 ### Blog
 
-``localhost:3000/posts`` to access the MongoDB database
+``localhost:3000/posts``
 
 This page displays a logo and 100 randomly generated blog posts. The posts are generated during the seeding step.
 
-This page and the seeding is only accessible when a database is available and the DB_HOST environment variable has been set with its location.
+This page and the seeding is only accessible when a database is available and the DB_HOST environment variable has been set with it's location.
 
 ### A fibonacci number generator
 
-``localhost:3000/fibonacci/{index}`` 
+``localhost:3000/fibonacci/{index}``
 
 This page has be implemented poorly on purpose to produce a slow running function. This can be used for performance testing and crash recovery testing.
 
