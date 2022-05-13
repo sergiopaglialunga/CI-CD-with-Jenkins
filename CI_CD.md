@@ -14,7 +14,7 @@ CI allows developers to generate and implement new functionality with ease and s
 Developers work on features independently and in parallel with each other, without having to worry about clashes within their teams. Tracking and merging code additions allows for smoother integration of new features without fear of irreparably damaging the source code.
 
 ### A continuous integration pipeline should:
-![CI/CD](diagrams/cicd_jenkins1 .png)
+![CI/CD](diagrams/cicd_jenkins1.png)
 
 - Maintain a single source code repository for a project
 - Have a "master" branch that should always be ready to deploy
@@ -94,7 +94,7 @@ What is a CI CD Pipeline: The CI/CD pipeline is all about automation: Initiating
 ![CI/CD](diagrams/services.png)
 
 # Jenkins
-![CI/CD](diagrams/jenkins.png)
+![CI/CD](diagrams/jenkins1.png)
 
 Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
