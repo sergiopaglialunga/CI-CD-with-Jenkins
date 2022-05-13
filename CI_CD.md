@@ -1,9 +1,9 @@
 # CI/CD
 
 ## Continuous Integration (CI)
-![AWS diagram](diagrams/c_integration.png)
+![CI/CD](diagrams/c_integration.png)
 
-Continuous Integration (CI): Developers merge/commit code to master branch multiple times a day, fully automated build and test process which gives feedback within few minutes, by doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.
+Continuous Integration (CI): 
 
 CI refers to the automated integration of code from many contributors into a single software project.
 
@@ -14,6 +14,7 @@ CI allows developers to generate and implement new functionality with ease and s
 Developers work on features independently and in parallel with each other, without having to worry about clashes within their teams. Tracking and merging code additions allows for smoother integration of new features without fear of irreparably damaging the source code.
 
 ### A continuous integration pipeline should:
+![CI/CD](diagrams/cicd_jenkins1 .png)
 
 - Maintain a single source code repository for a project
 - Have a "master" branch that should always be ready to deploy
@@ -60,9 +61,9 @@ Greater awareness of progress also aids transparency of work across the organisa
 # Continuous Delivery and Continuous Deployment 
 
 ## Continuous Delivery
-![AWS diagram](diagrams/cdelivery.png)
+![CI/CD](diagrams/cdelivery.png)
 
-Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. In continuous Delivery the deployment is completed manually.
+Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having your testing automated, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. In continuous Delivery the deployment is completed manually.
 
 Continuous delivery is an extension of the CI philosophy that seeks to deliver new features to customers on a regular basis. So while CI integrates code regularly, continuous delivery also delivers that code regularly.
 
@@ -70,10 +71,10 @@ It requires an automated process in place such that new releases only require ap
 
 The product is ready (it was delivered) but it is still not deployed.
 
-Netflix: some movies are ready (delivery) but still are not meant to be delivered to the public (deployment). The product is ready in the development environment but is not in the production environment yet.
+Netflix: some movies are ready (delivery) but still are not meant to be deployed to the general public (deployment). The product is ready in the development environment but is not in the production environment yet.
 
 ## Continuous Deployment
-![AWS diagram](diagrams/cdeployment.png)
+![CI/CD](diagrams/cdeployment.png)
 
 Continuous Deployment goes one step further than continuous delivery, with this practice, every change that passes all stages of your production pipeline is released to your customers, there is no human intervention, and only a failed test will prevent a new change to be deployed to production.
 
@@ -90,12 +91,14 @@ To put it simply, the continuous integration is part of both continuous delivery
 What is a CI CD Pipeline: The CI/CD pipeline is all about automation: Initiating code builds, automated testing, and automated deploying to the staging or production environments. It’s complex and exciting at the same time, but incredibly fast, if the output of any stage fails, the next stage will also fail.
 
 # Best CICD Tools to build Pipeline?
-![AWS diagram](diagrams/services.png)
+![CI/CD](diagrams/services.png)
 
 # Jenkins
-![AWS diagram](diagrams/pub_subnet.png)
+![CI/CD](diagrams/jenkins.png)
 
-Jenkins is an open-source automation server in which the central build and CI process take place, It is a Java-based program with packages for Windows, macOS, & Linux.
+Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
+
+Jenkins can be installed through native system packages, Docker, or even run standalone by any machine with a Java Runtime Environment (JRE) installed.
 
 Great range of plugins available, Jenkins supports building, deploying, and automating for software development projects, easy installation, simple and user-friendly interface, extensible with huge community-contributed plugin resource, easy environment configuration in user interface & supports distributed builds with master-slave architecture.
 
@@ -110,4 +113,4 @@ Code review/iteration on the Pipeline.
 Audit trail for the Pipeline.
 Single source of truth for the Pipeline, which can be viewed and edited by multiple members of the project.
 
-![AWS diagram](diagrams/jenkins2.png)
+![CI/CD](diagrams/jenkins2.png)
